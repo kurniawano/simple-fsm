@@ -1,0 +1,4 @@
+Import('cppEnv','test_sources')
+
+for ts in test_sources:
+  cppEnv.Program(ts)
