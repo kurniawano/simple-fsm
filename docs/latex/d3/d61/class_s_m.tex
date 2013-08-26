@@ -1,0 +1,29 @@
+\hypertarget{class_s_m}{
+\section{SM Class Reference}
+\label{d3/d61/class_s_m}\index{SM@{SM}}
+}
+
+
+{\ttfamily \#include $<$sm.hpp$>$}
+
+
+
+\subsection{Detailed Description}
+Generic superclass representing state machines. Don't instantiate this. Make a subclass with definitions for the following methods:
+\begin{DoxyItemize}
+\item getNextValues: (state\_\-t, inp\_\-t) -\/$>$ (state\_\-t+1, output\_\-t+1) or
+\begin{DoxyItemize}
+\item getNextState: (state\_\-t, inp\_\-t) -\/$>$ state\_\-t+1
+\end{DoxyItemize}
+\item startState: state or startState() -\/$>$ state optional:
+\item done: (state) -\/$>$ boolean (default always false)
+\item legalInputs: list(inp) 
+\end{DoxyItemize}
+
+Definition at line 12 of file sm.hpp.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{sm_8hpp}{sm.hpp}\end{DoxyCompactItemize}
